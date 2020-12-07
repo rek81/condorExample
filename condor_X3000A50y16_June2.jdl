@@ -1,0 +1,11 @@
+universe = vanilla
+Requirements = (Arch == "X86_64")
++RUQueue = "cms"
++AccountingGroup = "group_rutgers.rek81"
+Executable = pico_X3000A50y16_June2.sh
+should_transfer_files = NO
+Output = /home/rek81/userArea/launch_Trees_May25/CMSSW_10_6_2/src/B2GAnalysis_2020/treemaker/pico_X3000A50y16_June2_$(cluster)_$(process).stdout
+Error = /home/rek81/userArea/launch_Trees_May25/CMSSW_10_6_2/src/B2GAnalysis_2020/treemaker/pico_X3000A50y16_June2_$(cluster)_$(process).stderr
+Log = /home/rek81/userArea/launch_Trees_May25/CMSSW_10_6_2/src/B2GAnalysis_2020/treemaker/pico_X3000A50y16_June2_$(cluster)_$(process).condor
+Arguments = $(cluster) $(process)
+Queue 1
